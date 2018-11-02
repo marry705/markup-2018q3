@@ -1,0 +1,392 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    background-color:#ffff ;
+    font-family: 'Lato', sans-serif;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/header.png); 
+    background-color: black;
+    height: 900px; weight: 1600px;
+}
+.headermanue{
+    width: 90%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.25px solid rgb(255, 255, 255) ;
+}
+.headermanue ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.headermanue li{
+    font-size: 16pt;
+    text-align: center;
+    font-weight: lighter;
+    margin: 25px;
+    color: rgb(255, 255, 255) ;
+}
+.headermanue li a{
+    color: #ffff;
+    text-decoration: none; 
+    padding-bottom: 45%;   
+}
+.headermanue li a:hover {
+    color: #ffff;
+    border-bottom: 0.30px solid rgb(255, 255, 255) ; 
+}
+.headertext{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.headertext h1{
+    font-size: 72pt;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ffff;
+    margin-bottom: 5px;
+}
+.headertext blockquote{
+    font-family: Georgia-Italic;
+    font-size: 32pt;
+    text-align: center; 
+    font-style: italic;
+    color:  #ffff;
+    margin-top: 5px; 
+}
+/*autent*/
+.authen{
+    height: 120px; width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px double red ; 
+}
+.authenlog{
+    background-color: #21424a;
+    font-size: 24pt;
+    color: #ffff;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    width: 50%;
+}/*
+.authenlog::after{
+    content: '12';
+    border: 4px double red ; 
+}*/
+.authenreg{
+    background-color: #2fac6c;
+    font-size: 24pt;
+    color: #ffff;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    width: 50%;
+}
+/*
+.authenreg::before{
+    content: '';
+    color: #f1540f;
+    width: 12%;
+    transform: rotate(24);
+    -webkit-transform: rotate(24);
+    -moz-transform: rotate(24);
+    -ms-transform: rotate(24);
+    -o-transform: rotate(24);
+}*/
+/*Prices*/
+.price{
+    background-image: url(../img/prices.png);
+    height: 766px; weight: 1600px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.allprice{
+    height: 90%; width: 90%; 
+    display: flex;
+    justify-content: space-between;
+    border: 4px double red ;
+}
+.allprice div{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 20%;
+    background-color: #ffff; 
+    border: 4px double red ;
+}
+.allprice h3{
+    font-size: 16pt;
+    color: rgba(40, 40, 40, 255);
+    text-align: center;
+    text-transform: uppercase; 
+}
+.allprice table{
+    font-size: 16pt;
+    font-weight: lighter;
+    color: rgba(180, 180, 180, 255);
+    text-align: center; 
+}
+.roundanchor{
+
+}
+/*inform table*/
+.inform{
+    height: 570px; weight: 1600px;
+}
+.inform h3{
+    font-size: 24pt;
+    color: rgba(56, 55, 55, 255);
+    text-align: center; 
+    text-transform: uppercase;  
+}
+.inform p{
+    font-size: 16pt;
+    color: rgba(162, 162, 162, 255);
+    text-align: center;
+}
+.inform table{
+    text-align: center;
+}
+/*AboutUs*/
+.abouUs{
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; weight: 1600px;
+    border: 4px double blue ; 
+}
+.abouUscont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 40vh;
+    margin: 0;
+    border: 4px double black ;  
+}
+.infabotUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 40%;
+    margin: 0;
+    border: 4px double red ;
+}
+.infabotUs blockquote{
+    text-align: left;
+    font-size: 18pt;
+    margin: 0;
+    color: rgba(116, 116, 116, 255);
+}
+.infabotUs h2{
+    text-align: left;
+    font-size: 35pt;
+    font-weight: bolter;
+    margin: 0;
+    color: rgba(48, 48, 48, 255);
+}
+/*function*/
+.functions{
+    background-color: #ffff;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px; weight: 1600px;
+}
+.functionscont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%; weight: 80%;
+}
+.server{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.server blockquote{
+    font-size: 16pt;
+    font-weight: lighter;
+    color: rgba(126, 126, 126, 255);
+    margin: 0;
+}
+.server p{
+    font-size: 18pt;
+    font-weight: bolder;
+    color: rgba(48, 48, 48, 255);
+    margin: 5px 0px;
+}
+.fastserver{
+    width: 60px; height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #f1c40f;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.cloudserver{
+    width: 60px; height: 60px;
+    text-align: center; 
+    border-radius: 100%;
+    background-color: #0faff1;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.domaintransfer{
+    width: 60px; height: 60px;
+    font: 10px/60px;
+    border-radius: 100%;
+    background-color: #95a5a6;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.livesupport{
+    width: 60px; height: 60px; 
+    border-radius: 100%;
+    background-color: #f1540f;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.server i{
+    font-size: 150%;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    margin: 20% 20%;
+}
+/*block comments*/
+.comments{
+    background-image: url(../img/coments.png);
+    height: 193px; weight: 1600px;
+    font-size: 15pt;
+    text-align: center;
+    color: rgba(255, 255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.comments blockquote{
+    font-weight: lighter;
+    width: 60%;
+    margin: 0;
+}
+.comments p{
+    margin-top: 10px; 
+    font-weight: bolder;
+    margin-top: 10px;
+}
+/*footer*/
+footer{ 
+    background-color: #2a2a2a;
+    height: 300px; weight: 1600px;
+    font-size: 15pt;
+    font-weight: lighter;
+    color: rgba(104, 104, 104, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    color:  #686868;
+    text-decoration: none; 
+}
+footer a:hover {
+    color: white;
+}
+.logofooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 8vh;
+    border-bottom: 0.25px solid #686868;
+}
+.logofooter ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.logofooter li{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13pt;
+    margin: 25px;
+    color: rgb(255, 255, 255) ;
+}
+.basementfooter{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14pt;
+    width: 90%;
+    height: 60%;
+    margin-bottom: 5%; 
+    border: 4px double black ;
+}
+/*    margin-bottom: 4vh;*/
+.infofooter ul{
+    margin-left: 0; 
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+    line-height: 0.5;
+    height: 50%;
+    border: 4px double pink ;
+}
+.tablefooter ul{
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    list-style: none;
+    line-height: 1.5;
+    width: 25vw;
+    height: 20vh;
+    border: 4px double red ;
+}
+.tablefooter li:before  {
+    content: "> ";  
+}
+.contactsfooter ul{
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    list-style: none;
+    line-height: 1.5;
+    text-align: right;
+    width: 20vh; 
+    border: 4px double red ; 
+}
+.contactsfooter i{
+    font-size: 14pt;
+    color: #686868;
+    margin: 10px 10px;
+}
