@@ -29,30 +29,36 @@
                 <blockquote>We love our work...<br>And We're taking it seriously...</blockquote>
             </div>
         </header>
-        <div class = "authen">
-            <button class="authenlog">login</button>
-            <button class="authenreg">Register</button>
-        </div>
+		<section>
+            <div class="register">
+                <div class="login">
+                    <a href="">Login</a>
+                </div>
+                <div class="reg">
+                    <a href="">Register</a>
+                </div>
+            </div>
+		</section>
         <main id = "main">
-            <section class = "inform">
+            <section class = "informDomens">
                 <h3>Would you like to buy a new domain?</h3>
                 <p>Lorem iqsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris as null interdum, id molestier.</p>
-                <table>
+                <table class="rowdomens">
                     <tr>
                         <td>www.</td>
                         <td><input type="text" readonly value="What do you want?"></td>
                         <td>
-                            <section>
+                            <select>
                                 <option value="com" selected>.com</option>
                                 <option value="ru">.ru</option>
                                 <option value="by">.by</option>
                                 <option value="net">.net</option>
                                 <option value="org">.org</option>
-                            </section>
+                            </select>
                         </td>
                     </tr>
                 </table>
-                <table>
+                <table class="domens">
                     <tr>
                         <td>.COM</td>
                         <td>1 Year</td>
@@ -69,165 +75,193 @@
             </section>
             <section class="price">
                 <div class="allprice">
-                    <div>
-                        <div class="roundanchor"><i class="fa fa-anchor" aria-hidden="true"></i></div>
+                    <div class= "basic">
+                        <div class="roundamount pic1">
+                            <i class="fa fa-anchor" aria-hidden="true"></i>
+                        </div>
                         <h3>Basic Package</h3>
                         <table>
                             <tr>
-                                <td>Disk Space (GB)</td>
-                                <td>50</td>
+                                <td class="first">Disk Space (GB)</td>
+                                <td class="second">50</td>
                             </tr>
                             <tr>
-                                <td>Subdomains</td>
-                                <td>50</td>
+                                <td class="first">Subdomains</td>
+                                <td class="second">50</td>
                             </tr>
                             <tr>
-                                <td>Transfer (GB)</td>
-                                <td>50</td>
+                                <td class="first">Transfer (GB)</td>
+                                <td class="second">50</td>
                             </tr>
                             <tr>
-                                <td>Data bases</td>
-                                <td>1</td>
+                                <td class="first">Data bases</td>
+                                <td class="second">1</td>
                             </tr>
                             <tr>
-                                <td>Dashboards</td>
-                                <td>1</td>
+                                <td class="first">Dashboards</td>
+                                <td class="second">1</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Control Panel & FTP</td>
+                                <td colspan="2" class="first">Control Panel & FTP</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Free Supper</td>
+                                <td colspan="2" class="first">Free Supper</td>
                             </tr>
                         </table>
-                        <p><sup>$</sup>15<sub>/Mo</sub><p>
+                        <p><span><sup>$</sup>15<sub>/Mo</sub></span></p>
                         <h3>Select Plan<h3>
                     </div>
-                    <div>
-                        <div class="roundstar"><i class="fa fa-star-half-o" aria-hidden="true"></i></div>
+                    <div class= "normal">
+                        <div class="roundamount pic2">
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
                         <h3>Normal Package</h3>
                         <table>
                             <tr>
-                                <td>Disk Space (GB)</td>
-                                <td>100</td>
+                                <td class="first">Disk Space (GB)</td>
+                                <td class="second">100</td>
                             </tr>
                             <tr>
-                                <td>Subdomains</td>
-                                <td>100</td>
+                                <td class="first">Subdomains</td>
+                                <td class="second">100</td>
                             </tr>
                             <tr>
-                                <td>Transfer (GB)</td>
-                                <td>100</td>
+                                <td class="first">Transfer (GB)</td>
+                                <td class="second">100</td>
                             </tr>
                             <tr>
-                                <td>Data bases</td>
-                                <td>2</td>
+                                <td class="first">Data bases</td>
+                                <td class="second">2</td>
                             </tr>
                             <tr>
-                                <td>Dashboards</td>
-                                <td>2</td>
+                                <td class="first">Dashboards</td>
+                                <td class="second">2</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Control Panel & FTP</td>
+                                <td colspan="2" class="first">Control Panel & FTP</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Free Supper</td>
+                                <td colspan="2" class="first">Free Supper</td>
                             </tr>
                         </table>
-                        <p><sup>$</sup>30<sub>/Mo</sub><p>
+                        <p><span><sup>$</sup>30<sub>/Mo</sub></span></p>
                         <h3>Select Plan<h3>
                     </div>
-                    <div>
-                        <div class="roundstarful"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    <div class ="big">
+                        <div class="roundamount pic3">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
                         <h3>Big Package</h3>
                         <table>
                             <tr>
-                                <td>Disk Space (GB)</td>
-                                <td>150</td>
+                                <td class="first">Disk Space (GB)</td>
+                                <td class="second">150</td>
                             </tr>
                             <tr>
-                                <td>Subdomains</td>
-                                <td>150</td>
+                                <td class="first">Subdomains</td>
+                                <td class="second">150</td>
                             </tr>
                             <tr>
-                                <td>Transfer (GB)</td>
-                                <td>150</td>
+                                <td class="first">Transfer (GB)</td>
+                                <td class="second">150</td>
                             </tr>
                             <tr>
-                                <td>Data bases</td>
-                                <td>4</td>
+                                <td class="first">Data bases</td>
+                                <td class="second">4</td>
                             </tr>
                             <tr>
-                                <td>Dashboards</td>
-                                <td>4</td>
+                                <td class="first">Dashboards</td>
+                                <td class="second">4</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Control Panel & FTP</td>
+                                <td colspan="2" class="first">Control Panel & FTP</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Free Supper</td>
+                                <td colspan="2" class="first">Free Supper</td>
                             </tr>
                         </table>
-                        <p><sup>$</sup>40<sub>/Mo</sub><p>
+                        <p><span><sup>$</sup>40<sub>/Mo</sub></span></p>
                         <h3>Select Plan<h3>
                     </div>
-                    <div>
-                        <div class="rounddiamond"><i class="fa fa-diamond" aria-hidden="true"></i></div>
+                    <div class="bigest">
+                        <div class="roundamount pic4"><i class="fa fa-diamond" aria-hidden="true"></i></div>
                         <h3>Biggest Package</h3>
                         <table>
                             <tr>
-                                <td>Disk Space (GB)</td>
-                                <td>250</td>
+                                <td class="first">Disk Space (GB)</td>
+                                <td class="second">250</td>
                             </tr>
                             <tr>
-                                <td>Subdomains</td>
-                                <td>250</td>
+                                <td class="first">Subdomains</td>
+                                <td class="second">250</td>
                             </tr>
                             <tr>
-                                <td>Transfer (GB)</td>
-                                <td>250</td>
+                                <td class="first">Transfer (GB)</td>
+                                <td class="second">250</td>
                             </tr>
                             <tr>
-                                <td>Data bases</td>
-                                <td>6</td>
+                                <td class="first">Data bases</td>
+                                <td class="second">6</td>
                             </tr>
                             <tr>
-                                <td>Dashboards</td>
-                                <td>6</td>
+                                <td class="first">Dashboards</td>
+                                <td class="second">6</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Control Panel & FTP</td>
+                                <td colspan="2" class="first">Control Panel & FTP</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Free Supper</td>
+                                <td colspan="2" class="first">Free Supper</td>
                             </tr>
                         </table>
-                        <p><sup>$</sup>70<sub>/Mo</sub><p>
+                        <p><span><sup>$</sup>70<sub>/Mo</sub></span></p>
                         <h3>Select Plan<h3>
                     </div>
                 </div>
             </section>
-            <section class="abouUs">
+            <section class="aboutUs">
                 <div class="abouUscont">
-                    <div class = "infabotUs">
-                        <h2><b>About</b> Us</h2>
-                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Praesent feugiat eget diam sit amet molestie.Curabitur. 
-                        ut ipsum bibendum tortor lacinia fermentum nec joeıa.
-                        Mauris at augue libero. Fusce posuere, sapien nec poır.
-                        Uaee augsuada sed mauris in tincidunt...</blockquote>
-                    </div>
-                    <div class = "employeeabotus">
-                        <p>Jonny Doe</p>
-                        <p>Designer</p>
-                    </div>
-                    <div class = "employeeabotus">
-                        <p>John Doe</p>
-                        <p>Designer</p>
-                    </div>
-                    <div class = "employeeabotus">
-                        <p>Johnatan Doe</p>
-                        <p>Designer</p>
+                    <article class="infabotUs">
+                        <h3><b>About</b> Us</h3>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> 
+                            Praesent feugiat eget diam sit amet molestie.Curabitur.<br/> 
+                            ut ipsum bibendum tortor lacinia fermentum nec joeıa.<br/>
+                            Mauris at augue libero. Fusce posuere, sapien nec poır.<br/>
+                            Uaee augsuada sed mauris in tincidunt...
+                        </div>
+                    </article>
+                    <div class="about-us-team"> 
+                        <div class="about-us-teamworker">
+                            <img alt="teamworker Jonny Doe" src="img/team1.png"/>
+                            <h4>Jonny Doe</h4>
+                            <p>Designer</p>
+                            <div class="about-us-team-social">
+                               <a href=""><i class="fa fa-facebook"></i></a> 
+                               <a href=""><i class="fa fa-twitter"></i></a> 
+                               <a href=""><i class="fa fa-link"></i></a> 
+                            </div>
+                        </div>
+                        <div class="about-us-teamworker">
+                            <img alt="teamworker John" src="img/team2.png"/>
+                            <h4>John Doe</h4>
+                            <p>Designer</p>
+                            <div class="about-us-team-social">
+                                <a href=""><i class="fa fa-facebook"></i></a> 
+                                <a href=""><i class="fa fa-twitter"></i></a> 
+                                <a href=""><i class="fa fa-link"></i></a> 
+                            </div>
+                        </div>
+                        <div class="about-us-teamworker">
+                            <img alt="teamworker Johnathan" src="img/team3.png"/>
+                            <h4>Johnathan Doe</h4>
+                            <p>Designer</p>
+                            <div class="about-us-team-social">
+                                <a href=""><i class="fa fa-facebook"></i></a> 
+                                <a href=""><i class="fa fa-twitter"></i></a> 
+                                <a href=""><i class="fa fa-link"></i></a> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -241,22 +275,26 @@
                     <div class="server"> 
                         <div class ="fastserver"><i class="fa fa-bolt" aria-hidden="true"></i></div>
                         <p>Fast Servers</p>
-                        <blockquote>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</blockquote>  
+                        <blockquote>Nulla dapibus neque augue, quis<br>
+                         tincidunt tortor aliquam vitae.</blockquote>  
                     </div>
                     <div class="server"> 
                         <div class ="cloudserver"><i class="fa fa-cloud" aria-hidden="true"></i></div>
                         <p>Cloud Servers</p>
-                        <blockquote>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</blockquote>
+                        <blockquote>Nulla dapibus neque augue, quis<br>
+                        tincidunt tortor aliquam vitae.</blockquote>
                     </div>
                     <div class="server"> 
                         <div class ="domaintransfer"><i class="fa fa-arrows" aria-hidden="true"></i></div>
                         <p>Domain Transfer</p>
-                        <blockquote>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</blockquote>
+                        <blockquote>Nulla dapibus neque augue, quis<br>
+                        tincidunt tortor aliquam vitae.</blockquote>
                     </div>
                     <div class="server"> 
                         <div class ="livesupport"><i class="fa fa-comments" aria-hidden="true"></i></div>
                         <p>Live Support</p>
-                        <blockquote>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</blockquote>
+                        <blockquote>Nulla dapibus neque augue, quis<br>
+                        tincidunt tortor aliquam vitae.</blockquote>
                     </div>
                 </div>  
             </section>
@@ -279,12 +317,10 @@
             </div> 
             <div class="basementfooter">
                 <div class="infofooter">
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consecteteeseuri<br>
-                        adipiscing elit. Donec mollis commodoeesene<br>
-                        que, non commodo risus volutpat vel.</li>
-                        <li>Design by Mert Can Eyriyer</li>
-                    </ul>
+                    Lorem ipsum dolor sit amet, consecteteeseuri<br>
+                    adipiscing elit. Donec mollis commodoeesene<br>
+                    que, non commodo risus volutpat vel.<br>
+                    <p>Design by Mert Can Eyriyer</p>
                 </div>
                 <div class="tablefooter">
                     <ul>
@@ -292,6 +328,8 @@
                         <li><a href="#">Account</a></li>
                         <li><a href="#">Product Catalog</a></li>
                         <li><a href="#">Shortoodes</a></li>
+                    </ul>
+                    <ul>
                         <li><a href="#">Site Map</a></li>
                         <li><a href="#">Whois Search</a></li>
                         <li><a href="#">Web Mail</a></li>

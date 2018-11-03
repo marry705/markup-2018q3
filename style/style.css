@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color:#ffff ;
+    background-color:rgb(255, 255, 255) ;
     font-family: 'Lato', sans-serif;
+	color: #565656;
+	width: 100%;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 #header{
     display: flex;
@@ -12,15 +17,19 @@ body{
     align-items: center;
     background-image: url(../img/header.png); 
     background-color: black;
-    height: 900px; weight: 1600px;
+    height: 900px; 
+    /*width: 1600px;*/
+}
+.headermanue img{
+    min-width: 133px;
 }
 .headermanue{
-    width: 90%;
-    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.25px solid rgb(255, 255, 255) ;
+    width: 90%;
+    height: 12vh;
+    border-bottom: 0.25px solid #686868;
 }
 .headermanue ul{
     width: 60%;
@@ -29,20 +38,19 @@ body{
     list-style: none;
 }
 .headermanue li{
-    font-size: 16pt;
-    text-align: center;
     font-weight: lighter;
+    text-align: center;
+    font-size: 16pt;
     margin: 25px;
     color: rgb(255, 255, 255) ;
 }
 .headermanue li a{
-    color: #ffff;
-    text-decoration: none; 
-    padding-bottom: 45%;   
+    color: #ffffff;
+    text-decoration: none;   
 }
 .headermanue li a:hover {
-    color: #ffff;
-    border-bottom: 0.30px solid rgb(255, 255, 255) ; 
+    color: #ffffff;
+    border-bottom: 0.25px solid rgb(255, 255, 255) ; 
 }
 .headertext{
     height: 90%;
@@ -57,7 +65,7 @@ body{
     font-weight: bold;
     font-size: 50px;
     text-transform: uppercase;
-    color: #ffff;
+    color: #ffffff;
     margin-bottom: 5px;
 }
 .headertext blockquote{
@@ -65,69 +73,140 @@ body{
     font-size: 32pt;
     text-align: center; 
     font-style: italic;
-    color:  #ffff;
+    color:  #ffffff ;
     margin-top: 5px; 
 }
-/*autent*/
-.authen{
-    height: 120px; width: 100%;
+/*register section*/
+.register {
+    height: 120px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px double red ; 
+    justify-content: space-between;
 }
-.authenlog{
+.register a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.register a:hover {
+    color: #e84c3d;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login{
     background-color: #21424a;
     font-size: 24pt;
-    color: #ffff;
+    color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
     height: 100%;
-    width: 50%;
-}/*
-.authenlog::after{
-    content: '12';
-    border: 4px double red ; 
-}*/
-.authenreg{
+    width: 55%;
+    padding: 35px;
+}
+.reg{
     background-color: #2fac6c;
     font-size: 24pt;
-    color: #ffff;
+    color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
     height: 100%;
-    width: 50%;
+    width: 45%; 
+    padding: 35px; 
+    position: relative; 
+}
+.reg::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 80px;
+    height: 120px;
+    transform: skew(-15deg, 0deg);
+    background-color: #2fac6c;
+    -webkit-transform: skew(-15deg, 0deg);
+    -moz-transform: skew(-15deg, 0deg);
+    -ms-transform: skew(-15deg, 0deg);
+    -o-transform: skew(-15deg, 0deg);
+} 
+/*inform table*/
+.informDomens{
+    padding: 50px;
+}
+.informDomens h3{
+    margin: 0;
+    font-size: 24pt;
+    color: rgba(56, 55, 55, 255);
+    text-align: center;  
+}
+.informDomens p{
+    font-size: 16pt;
+    color: rgba(162, 162, 162, 255);
+    text-align: center;
+}
+.informDomens table{
+    border-collapse: collapse;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 890px;
+    border: 0.25px solid blue;
+}
+.domens td{
+    padding: 35px;
+    border: 0.25px solid black;
+}
+.domens tr{
+    border: 4px double red ;
+}
+.domens td::before{
+    content: '';
+    display: block;
+    width: 7px;
+    background-color: #2fac6c;
+}
+.domens td::after{
+    content: '';
+    display: block;
+    width: 10px;
+    background-color: #2fac6c;
 }
 /*
-.authenreg::before{
-    content: '';
-    color: #f1540f;
-    width: 12%;
-    transform: rotate(24);
-    -webkit-transform: rotate(24);
-    -moz-transform: rotate(24);
-    -ms-transform: rotate(24);
-    -o-transform: rotate(24);
-}*/
+.domens th {
+    
+}  */
 /*Prices*/
 .price{
     background-image: url(../img/prices.png);
-    height: 766px; weight: 1600px; 
+    /*width: 1600px; */
     display: flex;
     justify-content: center;
     align-items: center; 
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .allprice{
     height: 90%; width: 90%; 
     display: flex;
     justify-content: space-between;
-    border: 4px double red ;
 }
 .allprice div{
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    width: 20%;
-    background-color: #ffff; 
-    border: 4px double red ;
+    background-color: rgb(255, 255, 255) ; 
+}
+.basic{
+    border-top: 6px solid #f9d423;
+}
+.normal{
+    border-top: 6px solid #7f8c8d;
+}
+.big{
+    border-top: 6px solid #f85f40;
+}
+.bigest{
+    border-top: 6px solid #1abc9c;
 }
 .allprice h3{
     font-size: 16pt;
@@ -140,97 +219,225 @@ body{
     font-weight: lighter;
     color: rgba(180, 180, 180, 255);
     text-align: center; 
+    border-collapse: separate; border-spacing: 10px 20px;
+    border-top:  0.25px solid rgb(8, 8, 8);
+    border-bottom:  0.25px solid rgb(8, 8, 8);
+    margin-bottom: 20px;
 }
-.roundanchor{
-
+.allprice sub{
+    font-size: 13pt;
+    font-weight: lighter;
+    color: #8d8d8d;
+}    
+.first {
+    text-align: left;
 }
-/*inform table*/
-.inform{
-    height: 570px; weight: 1600px;
+.basic .second {
+    text-align: right;
+    color: #f9d423;
 }
-.inform h3{
-    font-size: 24pt;
-    color: rgba(56, 55, 55, 255);
-    text-align: center; 
-    text-transform: uppercase;  
+.normal .second {
+    text-align: right;
+    color: #7f8c8d;
 }
-.inform p{
-    font-size: 16pt;
-    color: rgba(162, 162, 162, 255);
+.big .second {
+    text-align: right;
+    color: #f85f40;
+}
+.bigest .second {
+    text-align: right;
+    color: #1abc9c;
+}
+.roundamount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    margin: 0 auto;   
+}
+.pic1 {
+    border: 4px solid rgb(249, 212, 35);
+    border-radius: 50%;
+    border-left-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-right-color: white;
+    transform: rotate(43deg);
+    color: rgb(249, 212, 35);
+}
+.roundamount i {
+    transform: rotate(-43deg);
+}
+.roundamount:hover {
+    color: #ffffff;
+}
+.pic2 {
+    border: 4px solid rgb(127, 140, 141);
+    border-radius: 50%;
+    border-left-color: white;
+    border-bottom-color: white;
+    transform: rotate(43deg);
+    color:rgb(127, 140, 141);
+}
+.pic3 {
+    border: 4px solid rgb(248, 95, 64);
+    border-radius: 50%;
+    border-left-color: white;
+    transform: rotate(43deg);
+    color:rgb(248, 95, 64);
+}
+.pic4  {
+    border: 4px solid rgb(26, 188, 156);;
+    border-radius: 50%;
+    transform: rotate(43deg);
+    color:rgb(26, 188, 156);
+}
+.allprice p{
+    margin: 0;
     text-align: center;
 }
-.inform table{
+.bigest span{
+    font-size: 17pt;
     text-align: center;
+    font-weight: bolder;
+    color: rgba(44, 44, 44, 255);
+    border-bottom: 4px solid #1abc9c;
+    padding-bottom: 3.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.big span{
+    font-size: 17pt;
+    text-align: center;
+    font-weight: bolder;
+    color: rgba(44, 44, 44, 255);
+    border-bottom: 4px solid #f85f40;
+    padding-bottom: 3.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.basic span{
+    font-size: 17pt;
+    text-align: center;
+    font-weight: bolder;
+    color: rgba(44, 44, 44, 255);
+    border-bottom: 4px solid #f9d423;
+    padding-bottom: 3.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.normal span{
+    font-size: 17pt;
+    text-align: center;
+    font-weight: bolder;
+    color: rgba(44, 44, 44, 255);
+    border-bottom: 4px solid #7f8c8d;
+    padding-bottom: 3.5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /*AboutUs*/
-.abouUs{
-    text-align: center; 
+.aboutUs{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px; weight: 1600px;
-    border: 4px double blue ; 
+    padding: 30px;
+    border: 4px solid blue ; 
 }
 .abouUscont{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 40vh;
     margin: 0;
-    border: 4px double black ;  
+    padding-top: 80px;
+    border-top: 1.5px dotted #d7d7d7;
 }
 .infabotUs{
+    width:40%;
+    padding-right: 30px; 
+    margin: 0;
+    border-right: 1.5px dotted #d7d7d7;
+}
+.infabotUs div{
+    text-align: left;
+    font-size: 18pt;
+    font-weight: lighter;
+    line-height: 1.5em;
+    margin: 0;
+    padding-right: 50px;
+    color: rgba(116, 116, 116, 255);
+}
+.infabotUs h3{
+    text-align: left;
+    font-size: 30pt;
+    font-weight: bolder;
+    margin: 0px 0px 10px 0px;
+    color: rgba(48, 48, 48, 255);
+}
+.infabotUs b{
+    font-weight: 900;
+}
+.about-us-team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px double red ; 
+}
+/*block comments*/
+.comments{
+    background-image: url(../img/coments.png);
+    /*width: 1600px;*/
+    font-size: 15pt;
+    text-align: center;
+    color: rgba(255, 255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    width: 40%;
-    margin: 0;
-    border: 4px double red ;
+    padding: 25px;  
 }
-.infabotUs blockquote{
-    text-align: left;
-    font-size: 18pt;
+.comments blockquote{
+    font-weight: lighter;
+    width: 60%;
     margin: 0;
-    color: rgba(116, 116, 116, 255);
 }
-.infabotUs h2{
-    text-align: left;
-    font-size: 35pt;
-    font-weight: bolter;
-    margin: 0;
-    color: rgba(48, 48, 48, 255);
+.comments p{
+    margin-top: 10px; 
+    font-weight: bolder;
+    margin-top: 10px;
 }
 /*function*/
 .functions{
-    background-color: #ffff;
+    background-color: rgb(255, 255, 255) ;
     text-align: center; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 350px; weight: 1600px;
+    padding: 40px;
 }
 .functionscont{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 70%; weight: 80%;
+    height: 70%; width: 90%;
 }
 .server{
-    width: 20%;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .server blockquote{
+    margin: 0;
+    line-height: 1.5em;
     font-size: 16pt;
     font-weight: lighter;
     color: rgba(126, 126, 126, 255);
-    margin: 0;
 }
 .server p{
     font-size: 18pt;
@@ -239,8 +446,11 @@ body{
     margin: 5px 0px;
 }
 .fastserver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     width: 60px; height: 60px;
-    text-align: center;
     border-radius: 100%;
     background-color: #f1c40f;
     -webkit-border-radius: 100%;
@@ -249,8 +459,11 @@ body{
     -o-border-radius: 100%;
 }
 .cloudserver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     width: 60px; height: 60px;
-    text-align: center; 
     border-radius: 100%;
     background-color: #0faff1;
     -webkit-border-radius: 100%;
@@ -259,8 +472,11 @@ body{
     -o-border-radius: 100%;
 }
 .domaintransfer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     width: 60px; height: 60px;
-    font: 10px/60px;
     border-radius: 100%;
     background-color: #95a5a6;
     -webkit-border-radius: 100%;
@@ -269,7 +485,11 @@ body{
     -o-border-radius: 100%;
 }
 .livesupport{
-    width: 60px; height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 60px; height: 60px;
     border-radius: 100%;
     background-color: #f1540f;
     -webkit-border-radius: 100%;
@@ -283,32 +503,9 @@ body{
     text-align: center;
     margin: 20% 20%;
 }
-/*block comments*/
-.comments{
-    background-image: url(../img/coments.png);
-    height: 193px; weight: 1600px;
-    font-size: 15pt;
-    text-align: center;
-    color: rgba(255, 255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;   
-}
-.comments blockquote{
-    font-weight: lighter;
-    width: 60%;
-    margin: 0;
-}
-.comments p{
-    margin-top: 10px; 
-    font-weight: bolder;
-    margin-top: 10px;
-}
 /*footer*/
 footer{ 
     background-color: #2a2a2a;
-    height: 300px; weight: 1600px;
     font-size: 15pt;
     font-weight: lighter;
     color: rgba(104, 104, 104, 255);
@@ -321,14 +518,17 @@ footer a{
     color:  #686868;
     text-decoration: none; 
 }
+footer img{
+    min-width: 133px;
+}
 footer a:hover {
-    color: white;
+    color: rgb(255, 255, 255) ;
 }
 .logofooter{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 8vh;
     border-bottom: 0.25px solid #686868;
 }
@@ -350,40 +550,40 @@ footer a:hover {
     justify-content: space-between;
     font-size: 14pt;
     width: 90%;
-    height: 60%;
-    margin-bottom: 5%; 
-    border: 4px double black ;
+    height: 60%; 
+    margin-bottom: 30px;
 }
-/*    margin-bottom: 4vh;*/
-.infofooter ul{
-    margin-left: 0; 
-    padding-left: 0;
-    list-style: none;
+.infofooter{
     text-align: left;
-    line-height: 0.5;
-    height: 50%;
-    border: 4px double pink ;
+    border-right: 0.25px solid #686868;
+    padding-top: 30px;
+    padding-right: 60px;
+}
+.tablefooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .tablefooter ul{
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0;
     list-style: none;
-    line-height: 1.5;
-    width: 25vw;
-    height: 20vh;
-    border: 4px double red ;
+    line-height: 2em;
+    margin-right: 20px;
 }
 .tablefooter li:before  {
     content: "> ";  
+}
+.contactsfooter{
+    padding-left: 60px;
+    border-left: 0.25px solid #686868;
 }
 .contactsfooter ul{
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0;
     list-style: none;
     line-height: 1.5;
-    text-align: right;
-    width: 20vh; 
-    border: 4px double red ; 
+    text-align: left;
 }
 .contactsfooter i{
     font-size: 14pt;
