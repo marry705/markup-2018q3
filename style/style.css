@@ -232,32 +232,6 @@ body{
     height: 10%;
     background-color: #ffffff;
 }
-/*
-.ftr{
-    position: relative; 
-}
-.ftr::before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    background-color: red;
-}
-.ftr::after{
-    content: ' ';
-    display: block;
-    position: absolute;
-    top: 90%;
-    left: 0px;
-    width: 360%;
-    height: 10%;
-    background-color: #ffffff;
-    background-color: red;
-}*/
 .domens tr:hover{
     text-shadow: 1px 1px 2px black, 0 0 1em red; 
     color: white; 
