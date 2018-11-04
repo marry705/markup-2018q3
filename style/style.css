@@ -18,6 +18,7 @@ body{
     background-image: url(../img/header.png); 
     background-color: black;
     height: 900px;
+    width: 100%;
 }
 .headermanue img{
     min-width: 133px;
@@ -133,44 +134,134 @@ body{
 }
 .informDomens h3{
     margin: 0;
-    font-size: 24pt;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20pt;
     color: rgba(56, 55, 55, 255);
     text-align: center;  
 }
 .informDomens p{
-    font-size: 16pt;
+    font-size: 14pt;
+    font-weight: lighter;
     color: rgba(162, 162, 162, 255);
     text-align: center;
+    margin: 0;
 }
 .informDomens table{
+    color: #d9d9d9;
     border-collapse: collapse;
     text-align: center;
+    font-size: 16pt;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
     margin-top: 50px;
-    width: 890px;
-    border: 0.25px solid blue;
+    width: 900px;
+    border: 2px solid #d9d9d9;
+}
+.col1, .col3{
+    width: 10%;
+}
+.col1{
+    position: relative;
+}
+.col1::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 110%;
+    height: 20%;
+    background-color: #ffffff;
+}
+.col1::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 0px;
+    width: 110%;
+    height: 20%;
+    background-color: #ffffff;
+}
+.col2{
+    text-align: left;
+}
+.rowdomens{
+    height: 50px;
+}
+.rowdomens td{
+    border: 2px solid #d9d9d9;
+}
+.rowdomens input{
+    margin-left: 10px;
+    border: none;
+    font-size: 14pt;
+    color: rgba(134, 134, 134, 255);
+}
+.rowdomens select{
+    font-size: 16pt;
+    border: none;
+    color: #d9d9d9;
 }
 .domens td{
     padding: 35px;
-    border: 0.25px solid black;
+    border: 2px solid #d9d9d9; 
 }
-.domens tr{
-    border: 4px double red ;
+.domens .ftd{
+    position: relative; 
 }
-.domens td::before{
+.domens .ftd::before{
     content: '';
     display: block;
-    width: 7px;
-    background-color: #2fac6c;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 360%;
+    height: 10%;
+    background-color: #ffffff;
 }
-.domens td::after{
+.domens .ftd::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 0px;
+    width: 360%;
+    height: 10%;
+    background-color: #ffffff;
+}
+/*
+.ftr{
+    position: relative; 
+}
+.ftr::before{
     content: '';
     display: block;
+    position: absolute;
+    top: 100px;
+    left: 0px;
     width: 10px;
-    background-color: #2fac6c;
-} 
+    height: 10px;
+    background-color: #ffffff;
+    background-color: red;
+}
+.ftr::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 0px;
+    width: 360%;
+    height: 10%;
+    background-color: #ffffff;
+    background-color: red;
+}*/
+.domens tr:hover{
+    text-shadow: 1px 1px 2px black, 0 0 1em red; 
+    color: white; 
+}
 /*Prices*/
 .price{
     background-image: url(../img/prices.png);
@@ -479,12 +570,12 @@ body{
 .server blockquote{
     margin: 0;
     line-height: 1.5em;
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: lighter;
     color: rgba(126, 126, 126, 255);
 }
 .server p{
-    font-size: 18pt;
+    font-size: 16pt;
     font-weight: bolder;
     color: rgba(48, 48, 48, 255);
     margin: 5px 0px;
